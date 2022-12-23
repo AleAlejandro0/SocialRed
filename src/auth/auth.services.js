@@ -45,7 +45,7 @@ const postRecoveryToken = (req, res) => {
         .then((data) => {
             if(data){
                 mailer.sendMail({
-                    from: '<example@gmail.com>',
+                    from: '<alealejandroale0@gmail.com>',
                     to: email,
                     subject: 'Recuperación de Contraseña',
                     html: `<a href='${config.api.host}/api/v1/auth/recovery-password/${data.id}'>${config.api.host}/api/v1/auth/recovery-password/${data.id}</a>`
